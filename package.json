@@ -10,5 +10,13 @@
   "license": "ISC",
   "dependencies": {
     "sass": "^1.54.0"
+  },
+  "homepage": "https://github.com/Kevin0z0/hexo-renderer-sass2#readme",
+  "bugs": {
+    "url": "https://github.com/Kevin0z0/hexo-renderer-sass2/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kevin0z0/hexo-renderer-sass2.git"
   }
 }
