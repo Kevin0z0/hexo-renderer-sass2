@@ -18,6 +18,7 @@ Add content
 sass:
   compressed: true #compress css
   save: false # save css
+  prefix: prod_  # add custom filename prefix when saveing css
 
   theme: light # custom theme name
 
@@ -31,17 +32,46 @@ sass:
     contrastSecondary: '#FFEEEF'
 
     footer: $primaryColor  # Cite previous variable
+    width: 100px
 ```
 
-```scss
-// You can use theme("name") to get custom theme value from _config.yml
+You can use `theme("name")` to get custom theme value from `_config.yml`
 
+```scss
 body{
-    background: theme("background");
+    background: theme("background"); //#fff
 }
 
 div{
-    background: theme("footer")
+    background: theme("footer") // #2F66FF
+    width: theme("width") * 100 // 10000px
 }
+```
 
+And in `:root`, you should use `#{}` to wrap `theme()`
+
+```scss
+:root{
+    --primary-color: #{theme("primaryColor")} // #2F66FF
+}
+```
+
+You can also use `hexo_config("name")` to get item from other options
+
+```yml
+# _config.yml
+title: sass2
+# development mode
+dev: true
+version: 0.1.0
+```
+
+```scss
+div{
+    @if hexo_config("dev") {
+        background: #fff;
+    } @else{
+        background: #000;
+    } // result is background: #fff;
+}
 ```
