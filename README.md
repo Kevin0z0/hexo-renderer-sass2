@@ -56,7 +56,9 @@ And in `:root`, you should use `#{}` to wrap `theme()`
 }
 ```
 
-You can also use `hexo_config("name")` to get item from other options
+You can also use `hexo_config("name")` to get item from other options including global config and theme config
+
+Priority: `theme config` > `global config`
 
 ```yml
 # _config.yml
