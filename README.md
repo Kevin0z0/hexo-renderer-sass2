@@ -19,8 +19,10 @@ sass:
   compressed: true #compress css
   save: false # save css
   prefix: prod_  # add custom filename prefix when saveing css
+  autoprefixer: true # use autoprefixer
 
   theme: light # custom theme name
+  
 
   light:
     background: '#fff'
@@ -77,3 +79,4 @@ div{
     } // result is background: #fff;
 }
 ```
+
