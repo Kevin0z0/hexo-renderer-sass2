@@ -1,6 +1,6 @@
 # hexo-renderer-sass2
 
-A hexo plugin for sass, hexo could compile sass/scss files automatically
+A sass plugin for hexo. This plugin could compile sass/scss files automatically
 
 ## Install
 
@@ -17,9 +17,11 @@ Add content
 ```yml
 sass:
   compressed: true #compress css
+  
   save: false # save css
   prefix: prod_  # add custom filename prefix when saveing css
   autoprefixer: true # use autoprefixer
+  sourceMap: true # save sass/scss SourceMap
 
   theme: light # custom theme name
   
