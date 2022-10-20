@@ -1,0 +1,24 @@
+{
+  "name": "hexo-renderer-sass2",
+  "version": "1.2.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kevin0z0",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.8",
+    "postcss": "^8.4.16",
+    "sass": "^1.54.0"
+  },
+  "homepage": "https://github.com/Kevin0z0/hexo-renderer-sass2#readme",
+  "bugs": {
+    "url": "https://github.com/Kevin0z0/hexo-renderer-sass2/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kevin0z0/hexo-renderer-sass2.git"
+  }
+}
